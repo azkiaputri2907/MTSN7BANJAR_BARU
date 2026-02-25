@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTsN 7 Banjar - Website Resmi Madrasah</title>
+  <meta name="description" content="MTsN 7 Banjar - Madrasah Tsanawiyah Negeri 7 Banjar, Lok Baintan, Kec. Sungai Tabuk, Kabupaten Banjar, Kalimantan Selatan">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon">
+          <img src="img/logo.png" alt="Logo MTS">           </div>
+        <div class="navbar-logo-text">
+          <h1>MTsN 7 Banjar</h1>
+          <p>Madrasah Tsanawiyah Negeri</p>
+        </div>
+      </a>
+      
+      <div class="navbar-links">
+        <a href="index.html" class="navbar-link active">Beranda</a>
+        <a href="#struktur" class="navbar-link">Struktur Organisasi</a>
+        <a href="buku-tamu.html" class="navbar-link">Buku Tamu</a>
+        <a href="perpustakaan.html" class="navbar-link">Perpustakaan Online</a>
+      </div>
+      
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <button class="navbar-login">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg>
+          <span>Login</span>
+        </button>
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-links">
+        <a href="index.html" class="mobile-menu-link active">Beranda</a>
+        <a href="#struktur" class="mobile-menu-link">Struktur Organisasi</a>
+        <a href="buku-tamu.html" class="mobile-menu-link">Buku Tamu</a>
+        <a href="perpustakaan.html" class="mobile-menu-link">Perpustakaan Online</a>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <img src="https://images.unsplash.com/photo-1762088776943-28a9fbadcec4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1200" alt="MTsN 7 Banjar">
+      <div class="hero-overlay"></div>
+      <div class="hero-overlay-bottom"></div>
+    </div>
+    
+    <div class="hero-decoration sky"></div>
+    <div class="hero-decoration pink"></div>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+          <span>Website MTsN 7 Banjar</span>
+        </div>
+        
+        <h1>
+          Selamat Datang di 
+          <span class="gradient-text">MTsN 7 Banjar</span>
+        </h1>
+        
+        <p>
+          Madrasah Tsanawiyah Negeri 7 Banjar berkomitmen mewujudkan pendidikan berkualitas,
+          islami, inovatif, dan berkarakter untuk generasi yang gemilang.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="buku-tamu.html" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Isi Buku Tamu
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="perpustakaan.html" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            Kunjungi Perpustakaan Online
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Organisasi -->
+  <section id="struktur" class="section" style="background: linear-gradient(to bottom, var(--color-slate-50), white);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge sky">Tim Kami</span>
+        <h2>Struktur Organisasi</h2>
+        <p>Dipimpin oleh tenaga pendidik profesional dan berdedikasi tinggi untuk kemajuan pendidikan Islam</p>
+      </div>
+      
+      <!-- Kepala Madrasah Featured -->
+      <div class="fade-in" style="display: flex; justify-content: center; margin-bottom: 2rem;">
+        <div class="card" style="max-width: 28rem; width: 100%; box-shadow: 0 25px 50px rgba(0,0,0,0.1);">
+          <div style="position: relative; height: 12rem; background: linear-gradient(to bottom right, var(--color-sky-400), var(--color-blue-600));">
+            <img src="https://images.unsplash.com/photo-1698992939360-7a413b5419ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="H. Muhammad Fauzi, M.Pd." style="width: 100%; height: 100%; object-fit: cover; mix-blend-mode: overlay; opacity: 0.6;">
+            <div style="position: absolute; bottom: 1.25rem; left: 1.25rem;">
+              <div style="width: 4rem; height: 4rem; border-radius: var(--radius-2xl); overflow: hidden; border: 3px solid white; box-shadow: var(--shadow-lg);">
+                <img src="https://images.unsplash.com/photo-1698992939360-7a413b5419ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="H. Muhammad Fauzi, M.Pd." style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div style="position: absolute; top: 1rem; right: 1rem; background: var(--color-amber-400); color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; box-shadow: var(--shadow);">
+              ⭐ Kepala Madrasah
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 style="font-weight: 700; color: var(--color-slate-800); font-size: 1.125rem; margin-bottom: 0.25rem;">H. Muhammad Fauzi, S.Pd., M.Pd.</h3>
+            <p style="color: var(--color-sky-500); font-size: 0.875rem; margin-bottom: 0.75rem;">Kepala Madrasah</p>
+            <p style="color: var(--color-slate-500); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">Berpengalaman 22 tahun dalam dunia pendidikan Islam dan madrasah nasional</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--color-slate-400);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>kepala@mtsn7banjar.sch.id</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Rest of Staff -->
+      <div class="grid grid-2-sm grid-3-lg">
+        <!-- Staff 1 -->
+        <div class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(to bottom right, var(--color-sky-100), var(--color-pink-100));">
+            <img src="https://images.unsplash.com/photo-1758685848006-1bc450061624?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Siti Rahmawati">
+          </div>
+          <div class="card-content">
+            <span style="display: inline-block; padding: 0.25rem 0.625rem; background: var(--color-sky-50); color: var(--color-sky-600); border-radius: var(--radius-lg); font-size: 0.75rem; margin-bottom: 0.75rem;">Waka Kurikulum</span>
+            <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: 0.5rem;">Siti Rahmawati, S.Pd., M.M.</h3>
+            <p style="color: var(--color-slate-500); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">Spesialis pengembangan kurikulum madrasah berbasis kompetensi</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--color-slate-400);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>kurikulum@mtsn7banjar.sch.id</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff 2 -->
+        <div class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(to bottom right, var(--color-sky-100), var(--color-pink-100));">
+            <img src="https://images.unsplash.com/photo-1758685734503-58a8accc24e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Ahmad Budi Santoso">
+          </div>
+          <div class="card-content">
+            <span style="display: inline-block; padding: 0.25rem 0.625rem; background: var(--color-sky-50); color: var(--color-sky-600); border-radius: var(--radius-lg); font-size: 0.75rem; margin-bottom: 0.75rem;">Waka Kesiswaan</span>
+            <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: 0.5rem;">Ahmad Budi Santoso, S.Pd.</h3>
+            <p style="color: var(--color-slate-500); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">Fokus pada pengembangan karakter islami dan potensi siswa</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--color-slate-400);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>kesiswaan@mtsn7banjar.sch.id</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Staff 3 -->
+        <div class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(to bottom right, var(--color-amber-50), var(--color-green-100));">
+            <img src="https://images.unsplash.com/photo-1758685848006-1bc450061624?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Hj. Norhalimah">
+          </div>
+          <div class="card-content">
+            <span style="display: inline-block; padding: 0.25rem 0.625rem; background: var(--color-amber-50); color: var(--color-amber-600); border-radius: var(--radius-lg); font-size: 0.75rem; margin-bottom: 0.75rem;">Guru PAI &amp; Fiqih</span>
+            <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: 0.5rem;">Hj. Norhalimah, S.Ag., M.Pd.I.</h3>
+            <p style="color: var(--color-slate-500); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">Menanamkan nilai-nilai Islam dan akhlakul karimah kepada siswa</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--color-slate-400);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>norhalimah@mtsn7banjar.sch.id</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff 4 -->
+        <div class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(to bottom right, var(--color-sky-100), var(--color-pink-100));">
+            <img src="https://images.unsplash.com/photo-1758685848006-1bc450061624?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Dewi Lestari">
+          </div>
+          <div class="card-content">
+            <span style="display: inline-block; padding: 0.25rem 0.625rem; background: var(--color-sky-50); color: var(--color-sky-600); border-radius: var(--radius-lg); font-size: 0.75rem; margin-bottom: 0.75rem;">Guru Bahasa Indonesia</span>
+            <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: 0.5rem;">Dewi Lestari, S.Pd.</h3>
+            <p style="color: var(--color-slate-500); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">Penggerak literasi dan budaya baca di madrasah</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--color-slate-400);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>dewi@mtsn7banjar.sch.id</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Staff 5 -->
+        <div class="card fade-in">
+          <div class="card-image" style="background: linear-gradient(to bottom right, var(--color-sky-100), var(--color-pink-100));">
+            <img src="https://images.unsplash.com/photo-1758685734503-58a8accc24e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Rendra Wijaya">
+          </div>
+          <div class="card-content">
+            <span style="display: inline-block; padding: 0.25rem 0.625rem; background: var(--color-sky-50); color: var(--color-sky-600); border-radius: var(--radius-lg); font-size: 0.75rem; margin-bottom: 0.75rem;">Guru Matematika</span>
+            <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: 0.5rem;">Rendra Wijaya, S.Si.</h3>
+            <p style="color: var(--color-slate-500); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">Menjadikan matematika menyenangkan untuk semua siswa</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: var(--color-slate-400);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>rendra@mtsn7banjar.sch.id</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi Misi -->
+  <section class="section" style="background: linear-gradient(to bottom right, var(--color-sky-50), white, var(--color-pink-50));">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge pink">Landasan Kami</span>
+        <h2>Visi &amp; Misi</h2>
+        <p>Komitmen kami dalam membangun madrasah yang unggul, islami, dan berdaya saing</p>
+      </div>
+      
+      <div class="grid grid-2-lg" style="gap: 2rem; align-items: start;">
+        <!-- Visi -->
+        <div class="card fade-in" style="padding: 2rem; box-shadow: 0 20px 40px rgba(56,189,248,0.1); border-color: var(--color-sky-50);">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <div style="width: 3rem; height: 3rem; border-radius: var(--radius-2xl); background: linear-gradient(to bottom right, var(--color-sky-400), var(--color-blue-600)); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(56,189,248,0.3);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-slate-800); margin: 0;">Visi</h3>
+              <p style="font-size: 0.875rem; color: var(--color-sky-500); margin: 0;">Tujuan Jangka Panjang</p>
+            </div>
+          </div>
+          <p style="color: var(--color-slate-600); line-height: 1.6; margin-bottom: 1.5rem; font-style: italic; font-size: 1rem;">
+            "Terwujudnya madrasah yang unggul dalam prestasi akademik dan non-akademik, berkarakter islami, serta berwawasan lingkungan dan kebangsaan."
+          </p>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-sky-400); flex-shrink: 0; margin-top: 0.125rem;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Mewujudkan peserta didik yang berakhlakul karimah, cerdas, dan terampil</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-sky-400); flex-shrink: 0; margin-top: 0.125rem;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Mengembangkan kompetensi akademik dan religius siswa secara seimbang</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-sky-400); flex-shrink: 0; margin-top: 0.125rem;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Menciptakan lingkungan belajar yang kondusif, islami, dan menyenangkan</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-sky-400); flex-shrink: 0; margin-top: 0.125rem;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Membangun kemitraan yang kuat antara madrasah, keluarga, dan masyarakat</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Misi -->
+        <div class="card fade-in" style="padding: 2rem; box-shadow: 0 20px 40px rgba(244,114,182,0.1); border-color: var(--color-pink-50);">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <div style="width: 3rem; height: 3rem; border-radius: var(--radius-2xl); background: linear-gradient(to bottom right, var(--color-pink-400), var(--color-rose-500)); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(244,114,182,0.3);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-slate-800); margin: 0;">Misi</h3>
+              <p style="font-size: 0.875rem; color: var(--color-pink-500); margin: 0;">Langkah Nyata Kami</p>
+            </div>
+          </div>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div style="width: 1.5rem; height: 1.5rem; border-radius: var(--radius-lg); background: var(--color-pink-50); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.125rem;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-pink-500);">1</span>
+              </div>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Menyelenggarakan pembelajaran aktif, kreatif, dan efektif berbasis nilai Islam</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div style="width: 1.5rem; height: 1.5rem; border-radius: var(--radius-lg); background: var(--color-pink-50); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.125rem;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-pink-500);">2</span>
+              </div>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Mengembangkan kompetensi guru melalui pelatihan dan pengembangan profesional</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div style="width: 1.5rem; height: 1.5rem; border-radius: var(--radius-lg); background: var(--color-pink-50); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.125rem;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-pink-500);">3</span>
+              </div>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Menyediakan fasilitas belajar yang lengkap dan mendukung prestasi siswa</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div style="width: 1.5rem; height: 1.5rem; border-radius: var(--radius-lg); background: var(--color-pink-50); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.125rem;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-pink-500);">4</span>
+              </div>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Menumbuhkan budaya literasi, tahfidz, dan kecintaan ilmu pengetahuan</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <div style="width: 1.5rem; height: 1.5rem; border-radius: var(--radius-lg); background: var(--color-pink-50); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.125rem;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-pink-500);">5</span>
+              </div>
+              <span style="font-size: 0.875rem; color: var(--color-slate-600); line-height: 1.6;">Membangun karakter siswa melalui kegiatan ekstrakurikuler dan program keagamaan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section" style="padding: 4rem 0; background: linear-gradient(to right, var(--color-sky-500), var(--color-blue-600));">
+    <div class="container" style="max-width: 64rem; text-align: center;">
+      <div class="fade-in">
+        <h2 style="font-size: 1.875rem; font-weight: 700; color: white; margin-bottom: 1rem;">Siap Menjelajahi Perpustakaan Kami?</h2>
+        <p style="color: var(--color-sky-100); margin-bottom: 2rem; font-size: 1.125rem;">
+          Ratusan buku pelajaran dan cerita anak tersedia secara online untuk mendukung proses belajarmu.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+          <a href="perpustakaan.html" class="btn btn-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            Kunjungi Perpustakaan
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="buku-tamu.html" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Isi Buku Tamu
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="footer-logo-text">
+              <h3>MTsN 7 Banjar</h3>
+              <p>Madrasah Tsanawiyah Negeri</p>
+            </div>
+          </div>
+          <p class="footer-description">
+            Mewujudkan generasi muda yang berilmu, berakhlak mulia, dan berdaya saing. Bersama MTsN 7 Banjar, raih prestasi terbaik dengan landasan iman dan takwa.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer-social-link facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#struktur">Struktur Organisasi</a></li>
+            <li><a href="buku-tamu.html">Buku Tamu</a></li>
+            <li><a href="perpustakaan.html">Perpustakaan Online</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Kontak</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Desa Pembantanan, RT.02, Lok Baintan, Kec. Sungai Tabuk, Kab. Banjar, Kalimantan Selatan 70653</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(0511) 4360-789</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>mtsn7banjar@kemenag.go.id</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 MTsN 7 Banjar. Hak Cipta Dilindungi.</p>
+        <div class="footer-love">
+          <span>Dibuat oleh</span>
+          <span class="heart">♥</span>
+          <span>azkia</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

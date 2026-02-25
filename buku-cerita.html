@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buku Cerita Anak - Perpustakaan MTsN 7 Banjar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="library-wrapper">
+
+  <div class="lib-overlay" id="libOverlay" onclick="closeLibSidebar()"></div>
+
+  <aside class="lib-sidebar" id="libSidebar">
+    <div class="lib-sidebar-header">
+      <a href="perpustakaan.html" class="lib-sidebar-logo">
+        <div class="lib-sidebar-logo-icon">
+        <img src="img/logo.png" alt="Logo MTsN 7 Banjar">
+        </div>
+        <div>
+          <p style="font-size:.875rem;font-weight:700;color:var(--color-slate-800);line-height:1.2;margin:0">Perpustakaan</p>
+          <p style="font-size:.75rem;color:var(--color-sky-500);margin:0">MTsN 7 Banjar</p>
+        </div>
+      </a>
+    </div>
+    <nav class="lib-sidebar-nav">
+      <span class="lib-sidebar-nav-label">Menu Utama</span>
+      <ul class="lib-nav-list">
+        <li><a href="perpustakaan.html" class="lib-sidebar-link">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Beranda
+        </a></li>
+        <li><a href="katalog-kelas.html" class="lib-sidebar-link">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+          Katalog Kelas
+        </a></li>
+        <li><a href="buku-cerita.html" class="lib-sidebar-link active">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Buku Cerita <span class="lib-sidebar-link-dot"></span>
+        </a></li>
+        <li><a href="request-buku.html" class="lib-sidebar-link">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+          Request Buku
+        </a></li>
+      </ul>
+      <hr class="lib-sidebar-divider">
+      <a href="index.html" class="lib-sidebar-link" style="color:var(--color-slate-500)">
+        <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Kembali ke Website
+      </a>
+    </nav>
+    <div class="lib-sidebar-footer">
+      <div class="lib-sidebar-help-card">
+        <p style="font-size:.75rem;font-weight:600;color:var(--color-slate-700);margin:0 0 .25rem">Butuh bantuan?</p>
+        <p style="font-size:.75rem;color:var(--color-slate-500);margin:0 0 .5rem">Hubungi petugas perpustakaan kami</p>
+        <a href="tel:02112345678" style="font-size:.75rem;color:var(--color-sky-600);font-weight:600">(021) 1234-5678</a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="lib-main">
+    <header class="lib-topbar">
+      <button class="lib-menu-btn" onclick="toggleLibSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+      <div class="lib-search">
+        <svg class="lib-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="topbarSearch" placeholder="Cari cerita..." oninput="filterStories()">
+      </div>
+      <div class="lib-topbar-actions">
+        <!-- <button class="lib-notif-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span class="lib-notif-dot"></span>
+        </button> -->
+        <!-- <button class="lib-profile-btn">
+          <div class="lib-profile-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="lib-profile-name">Siswa</span>
+        </button> -->
+      </div>
+    </header>
+
+    <main class="lib-content" style="background:linear-gradient(135deg,#fdf2f8,#fce7f3,#fff7ed,#fdf4ff,#f0f9ff);min-height:calc(100vh - 4rem)">
+      <!-- Hero Banner -->
+      <div style="position:relative;border-radius:var(--radius-3xl);overflow:hidden;margin-bottom:2rem;box-shadow:var(--shadow-xl);min-height:200px" class="anim-slide-up">
+        <img src="https://images.unsplash.com/photo-1705660800046-2113f479369a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1200" alt="Buku Cerita Anak" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(219,39,119,.8),rgba(244,63,94,.5),rgba(251,146,60,.2))"></div>
+        <div style="position:relative;z-index:1;padding:2.5rem">
+          <div style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);border-radius:9999px;padding:.375rem 1rem;margin-bottom:1rem">
+            <span style="color:#fde047;font-size:.875rem">✨</span>
+            <span style="color:white;font-size:.875rem;font-weight:500">Koleksi Buku Cerita Anak</span>
+          </div>
+          <h1 style="font-size:1.75rem;font-weight:700;color:white;margin:0 0 .5rem">🧸 Pojok Cerita Anak 🌈</h1>
+          <p style="color:#fce7f3;font-size:.875rem;max-width:28rem;line-height:1.6;margin:0 0 1.5rem">Temukan cerita-cerita seru, lucu, dan penuh makna untuk si kecil. Membaca itu menyenangkan!</p>
+          <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">
+            <div style="background:rgba(255,255,255,.2);backdrop-filter:blur(8px);border-radius:var(--radius-2xl);padding:.5rem 1rem">
+              <span style="color:white;font-weight:700;font-size:1.125rem">12</span>
+              <span style="color:#fce7f3;font-size:.875rem;margin-left:.375rem">Judul Cerita</span>
+            </div>
+            <div style="background:rgba(255,255,255,.2);backdrop-filter:blur(8px);border-radius:var(--radius-2xl);padding:.5rem 1rem">
+              <span style="color:white;font-weight:700;font-size:1.125rem">5</span>
+              <span style="color:#fce7f3;font-size:.875rem;margin-left:.375rem">Kelompok Usia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div style="margin-bottom:1.25rem;max-width:28rem">
+        <div style="position:relative">
+          <svg style="position:absolute;left:.875rem;top:50%;transform:translateY(-50%);color:var(--color-slate-400);width:1rem;height:1rem;pointer-events:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="searchInput" placeholder="Cari judul cerita..." oninput="filterStories()" style="width:100%;padding:.75rem 1rem .75rem 2.5rem;background:white;border:1px solid var(--color-pink-100);border-radius:var(--radius-xl);font-size:.875rem;font-family:inherit;outline:none;box-sizing:border-box;box-shadow:var(--shadow-sm);transition:all .2s">
+        </div>
+      </div>
+
+      <!-- Age filters -->
+      <div style="display:flex;flex-wrap:wrap;gap:.625rem;margin-bottom:2rem" id="ageChips"></div>
+
+      <!-- Stories grid -->
+      <div style="display:grid;gap:1rem;margin-bottom:2rem" id="storiesGrid"></div>
+
+      <!-- Empty state -->
+      <div id="emptyState" style="display:none;text-align:center;padding:4rem 0">
+        <div style="font-size:4rem;margin-bottom:1rem">🔍</div>
+        <h3 style="font-size:1.125rem;font-weight:700;color:var(--color-slate-700);margin:0 0 .5rem">Cerita tidak ditemukan</h3>
+        <p style="color:var(--color-slate-500);font-size:.875rem;margin:0">Coba ubah kata kunci atau filter usia</p>
+      </div>
+
+      <!-- CTA Card -->
+      <div style="background:white;border-radius:var(--radius-3xl);padding:2rem;border:2px dashed var(--color-pink-200);text-align:center;box-shadow:var(--shadow-sm)">
+        <div style="font-size:2.5rem;margin-bottom:1rem">📖</div>
+        <h3 style="font-size:1.125rem;font-weight:700;color:var(--color-slate-800);margin:0 0 .5rem">Tidak menemukan cerita yang kamu cari?</h3>
+        <p style="color:var(--color-slate-500);font-size:.875rem;margin:0 0 1.5rem;max-width:28rem;margin-left:auto;margin-right:auto">Ajukan request cerita kepada kami dan kami akan berusaha menghadirkannya untuk kamu!</p>
+        <a href="request-buku.html" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--color-pink-500);color:white;padding:.75rem 1.5rem;border-radius:var(--radius-xl);font-size:.875rem;font-weight:600;text-decoration:none;box-shadow:0 6px 16px rgba(236,72,153,.3);transition:all .2s">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+          Request Cerita
+        </a>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script>
+function toggleLibSidebar() {
+  document.getElementById('libSidebar').classList.toggle('open');
+  document.getElementById('libOverlay').classList.toggle('open');
+}
+function closeLibSidebar() {
+  document.getElementById('libSidebar').classList.remove('open');
+  document.getElementById('libOverlay').classList.remove('open');
+}
+
+const AGE_FILTERS = ['Semua', '4-6 tahun', '4-7 tahun', '5-8 tahun', '5-9 tahun', '6-9 tahun', '6-10 tahun', '7-12 tahun', '8-12 tahun', '8-13 tahun', '9-13 tahun'];
+let activeAge = 'Semua';
+
+function renderChips() {
+  document.getElementById('ageChips').innerHTML = AGE_FILTERS.map(age => `
+    <button class="filter-chip pink ${activeAge===age?'active':''}" onclick="setAge('${age}')">
+      ${age === 'Semua' ? '🌟 Semua Usia' : '👶 ' + age}
+    </button>
+  `).join('');
+}
+
+function setAge(age) {
+  activeAge = age;
+  renderChips();
+  filterStories();
+}
+
+function filterStories() {
+  const search = (document.getElementById('searchInput').value || '').toLowerCase();
+  const topSearch = (document.getElementById('topbarSearch').value || '').toLowerCase();
+  const q = search || topSearch;
+
+  const filtered = STORY_BOOKS_DATA.filter(b => {
+    const matchAge = activeAge === 'Semua' || b.ageGroup === activeAge;
+    const matchSearch = !q || b.title.toLowerCase().includes(q) || b.author.toLowerCase().includes(q);
+    return matchAge && matchSearch;
+  });
+
+  const grid = document.getElementById('storiesGrid');
+  const empty = document.getElementById('emptyState');
+
+  if (filtered.length === 0) {
+    grid.style.display = 'none';
+    empty.style.display = 'block';
+    return;
+  }
+
+  grid.style.display = 'grid';
+  empty.style.display = 'none';
+
+  const cols = window.innerWidth >= 1280 ? 6 : window.innerWidth >= 1024 ? 4 : window.innerWidth >= 640 ? 3 : 2;
+  grid.style.gridTemplateColumns = `repeat(${cols},1fr)`;
+
+grid.innerHTML = filtered.map(b => `
+    <a href="detail-buku.html?id=${b.id}" class="story-card" style="text-decoration:none">
+      <div class="story-cover" style="background:${b.gradient}">
+        <div class="story-cover-star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <span class="story-cover-emoji">${b.emoji}</span>
+        <span class="story-cover-age">${b.ageGroup}</span>
+        <div class="story-cover-overlay">
+          <div style="background:white;border-radius:var(--radius-xl);padding:.375rem .875rem;display:flex;align-items:center;gap:.375rem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-pink-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span style="font-size:.75rem;font-weight:700;color:var(--color-pink-500)">Baca!</span>
+          </div>
+        </div>
+      </div>
+      <div class="story-info">
+        <p class="story-title">${b.title}</p>
+        <p class="story-author">${b.author}</p>
+        <div class="story-meta">
+          <span style="font-size:.6875rem;color:var(--color-slate-400)">${b.pages} hal.</span>
+          <span style="font-size:.6875rem">🌟</span>
+        </div>
+      </div>
+    </a>
+  `).join('');
+}
+
+renderChips();
+filterStories();
+window.addEventListener('resize', filterStories);
+
+document.getElementById('topbarSearch').addEventListener('input', function() {
+  document.getElementById('searchInput').value = this.value;
+  filterStories();
+});
+document.getElementById('searchInput').addEventListener('input', function() {
+  document.getElementById('topbarSearch').value = this.value;
+  filterStories();
+});
+</script>
+</body>
+</html>

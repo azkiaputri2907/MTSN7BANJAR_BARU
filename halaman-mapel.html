@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Buku - Perpustakaan MTsN 7 Banjar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="library-wrapper">
+
+  <div class="lib-overlay" id="libOverlay" onclick="closeLibSidebar()"></div>
+
+  <aside class="lib-sidebar" id="libSidebar">
+    <div class="lib-sidebar-header">
+      <a href="perpustakaan.html" class="lib-sidebar-logo">
+        <div class="lib-sidebar-logo-icon">
+        <img src="img/logo.png" alt="Logo MTsN 7 Banjar">
+        </div>
+        <div>
+          <p style="font-size:.875rem;font-weight:700;color:var(--color-slate-800);line-height:1.2;margin:0">Perpustakaan</p>
+          <p style="font-size:.75rem;color:var(--color-sky-500);margin:0">MTsN 7 Banjar</p>
+        </div>
+      </a>
+    </div>
+    <nav class="lib-sidebar-nav">
+      <span class="lib-sidebar-nav-label">Menu Utama</span>
+      <ul class="lib-nav-list">
+        <li><a href="perpustakaan.html" class="lib-sidebar-link">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Beranda
+        </a></li>
+        <li><a href="katalog-kelas.html" class="lib-sidebar-link active">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+          Katalog Kelas <span class="lib-sidebar-link-dot"></span>
+        </a></li>
+        <li><a href="buku-cerita.html" class="lib-sidebar-link">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Buku Cerita
+        </a></li>
+        <li><a href="request-buku.html" class="lib-sidebar-link">
+          <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+          Request Buku
+        </a></li>
+      </ul>
+      <hr class="lib-sidebar-divider">
+      <a href="index.html" class="lib-sidebar-link" style="color:var(--color-slate-500)">
+        <svg class="lib-sidebar-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Kembali ke Website
+      </a>
+    </nav>
+    <div class="lib-sidebar-footer">
+      <div class="lib-sidebar-help-card">
+        <p style="font-size:.75rem;font-weight:600;color:var(--color-slate-700);margin:0 0 .25rem">Butuh bantuan?</p>
+        <p style="font-size:.75rem;color:var(--color-slate-500);margin:0 0 .5rem">Hubungi petugas perpustakaan kami</p>
+        <a href="tel:02112345678" style="font-size:.75rem;color:var(--color-sky-600);font-weight:600">(021) 1234-5678</a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="lib-main">
+    <header class="lib-topbar">
+      <button class="lib-menu-btn" onclick="toggleLibSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+      <div class="lib-search">
+        <svg class="lib-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="topbarSearch" placeholder="Cari buku, judul, penulis..." oninput="filterBooks()">
+      </div>
+      <div class="lib-topbar-actions">
+        <!-- <button class="lib-notif-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span class="lib-notif-dot"></span>
+        </button>
+        <button class="lib-profile-btn">
+          <div class="lib-profile-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span class="lib-profile-name">Siswa</span>
+        </button> -->
+      </div>
+    </header>
+
+    <main class="lib-content">
+      <!-- Page Header -->
+      <div style="margin-bottom:2rem" class="anim-slide-up">
+        <a href="katalog-kelas.html" style="display:inline-flex;align-items:center;gap:.5rem;color:var(--color-slate-500);font-size:.875rem;text-decoration:none;margin-bottom:1.25rem;transition:color .2s">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          Kembali ke Katalog
+        </a>
+        <div style="display:flex;align-items:center;gap:1rem" id="paketHeader"></div>
+      </div>
+
+      <!-- Search & Filter -->
+      <div style="margin-bottom:1.5rem">
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1rem">
+          <div style="flex:1;min-width:200px;position:relative">
+            <svg style="position:absolute;left:.875rem;top:50%;transform:translateY(-50%);color:var(--color-slate-400);width:1rem;height:1rem;pointer-events:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="searchInput" placeholder="Cari judul atau penulis..." oninput="filterBooks()" style="width:100%;padding:.75rem 1rem .75rem 2.5rem;border:1px solid var(--color-slate-200);border-radius:var(--radius-xl);font-size:.875rem;font-family:inherit;outline:none;background:white;box-sizing:border-box;transition:all .2s">
+          </div>
+        </div>
+        <!-- Mapel chips -->
+        <div style="display:flex;flex-wrap:wrap;gap:.5rem" id="mapelChips"></div>
+      </div>
+
+      <!-- Books Grid -->
+      <div id="booksGrid" style="display:grid;gap:1rem"></div>
+      <div id="emptyState" style="display:none;text-align:center;padding:4rem 0">
+        <div style="width:4rem;height:4rem;border-radius:var(--radius-2xl);background:var(--color-slate-100);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-slate-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <h3 style="font-size:1.125rem;font-weight:700;color:var(--color-slate-700);margin:0 0 .5rem">Buku tidak ditemukan</h3>
+        <p style="color:var(--color-slate-500);font-size:.875rem;margin:0 0 1.5rem;max-width:24rem;margin-left:auto;margin-right:auto">Coba ubah kata kunci pencarian atau filter mata pelajaran. Atau ajukan request buku!</p>
+        <a href="request-buku.html" style="display:inline-flex;align-items:center;gap:.5rem;background:var(--color-sky-500);color:white;padding:.75rem 1.5rem;border-radius:var(--radius-xl);font-size:.875rem;font-weight:600;text-decoration:none;box-shadow:0 4px 12px rgba(14,165,233,.3)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="16"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+          Request Buku
+        </a>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script>
+function toggleLibSidebar() {
+  document.getElementById('libSidebar').classList.toggle('open');
+  document.getElementById('libOverlay').classList.toggle('open');
+}
+function closeLibSidebar() {
+  document.getElementById('libSidebar').classList.remove('open');
+  document.getElementById('libOverlay').classList.remove('open');
+}
+
+const params = new URLSearchParams(window.location.search);
+const paketId = params.get('paket') || 'kelas-7';
+const paketInfo = PAKET_DATA.find(p => p.id === paketId) || PAKET_DATA[0];
+const subjects = SUBJECTS_BY_PAKET[paketId] || [];
+let activeMapel = 'all';
+
+// Update page title
+document.title = paketInfo.name + ' - Perpustakaan MTsN 7 Banjar';
+
+// Render header
+document.getElementById('paketHeader').innerHTML = `
+  <div style="width:3.5rem;height:3.5rem;border-radius:var(--radius-2xl);background:${paketInfo.gradient};display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.15);flex-shrink:0;font-size:1.75rem">${paketInfo.emoji}</div>
+  <div>
+    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.25rem">
+      <h1 style="font-size:1.5rem;font-weight:700;color:var(--color-slate-800);margin:0">${paketInfo.name}</h1>
+      <span style="font-size:.75rem;background:var(--color-slate-100);color:var(--color-slate-500);padding:.25rem .625rem;border-radius:9999px">${paketInfo.level}</span>
+    </div>
+    <p style="color:var(--color-slate-500);font-size:.875rem;margin:0">${paketInfo.description}</p>
+  </div>
+`;
+
+// Render mapel chips
+function renderChips() {
+  const all = `<button class="filter-chip ${activeMapel==='all'?'active':''}" onclick="setMapel('all')">Semua Mapel</button>`;
+  const chips = subjects.map(s => `<button class="filter-chip ${activeMapel===s.id?'active':''}" onclick="setMapel('${s.id}')">${s.icon} ${s.name}</button>`).join('');
+  document.getElementById('mapelChips').innerHTML = all + chips;
+}
+
+function setMapel(id) {
+  activeMapel = id;
+  renderChips();
+  filterBooks();
+}
+
+function filterBooks() {
+  const search = (document.getElementById('searchInput').value || document.getElementById('topbarSearch').value || '').toLowerCase();
+  const books = BOOKS_DATA.filter(b => {
+    const matchPaket = b.paket === paketId;
+    const matchMapel = activeMapel === 'all' || b.mapel === activeMapel;
+    const matchSearch = !search || b.title.toLowerCase().includes(search) || b.author.toLowerCase().includes(search);
+    return matchPaket && matchMapel && matchSearch;
+  });
+
+  const grid = document.getElementById('booksGrid');
+  const empty = document.getElementById('emptyState');
+
+  if (books.length === 0) {
+    grid.style.display = 'none';
+    empty.style.display = 'block';
+    return;
+  }
+
+  grid.style.display = 'grid';
+  empty.style.display = 'none';
+
+  const cols = window.innerWidth >= 1280 ? 5 : window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 3 : 2;
+  grid.style.gridTemplateColumns = `repeat(${cols},1fr)`;
+
+  grid.innerHTML = books.map(b => {
+    const subj = subjects.find(s => s.id === b.mapel);
+    return `
+      <a href="detail-buku.html?id=${b.id}" class="book-card">
+        <div class="book-cover book-cover-lg" style="background:${b.gradient}">
+          <span class="book-cover-emoji">${b.emoji}</span>
+          <div class="book-cover-overlay"><div class="book-cover-badge">📖 Baca</div></div>
+        </div>
+        <div class="book-info">
+          ${subj ? `<span class="book-mapel-label">${subj.icon} ${subj.name}</span>` : ''}
+          <p class="book-title">${b.title}</p>
+          <p class="book-author">${b.author}</p>
+          <div class="book-meta">
+            <span class="book-pages">${b.pages} hal.</span>
+            <span class="book-year">${b.year}</span>
+          </div>
+        </div>
+      </a>
+    `;
+  }).join('');
+}
+
+renderChips();
+filterBooks();
+window.addEventListener('resize', filterBooks);
+
+// Sync both search inputs
+document.getElementById('topbarSearch').addEventListener('input', function() {
+  document.getElementById('searchInput').value = this.value;
+  filterBooks();
+});
+document.getElementById('searchInput').addEventListener('input', function() {
+  document.getElementById('topbarSearch').value = this.value;
+  filterBooks();
+});
+</script>
+</body>
+</html>
