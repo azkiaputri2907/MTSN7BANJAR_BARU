@@ -448,7 +448,7 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.footer-logo-icon {
+.footer-logo-icon img{
   width: 2.5rem;
   height: 2.5rem;
   border-radius: var(--radius-xl);
@@ -458,6 +458,7 @@ body {
   justify-content: center;
   box-shadow: var(--shadow-md);
 }
+
 
 .footer-logo-text h3 {
   font-size: 0.875rem;
