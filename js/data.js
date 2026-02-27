@@ -207,6 +207,71 @@ const BOOKS_DATA = [
     isbn: "978-634-00-2043-4"
   },
 
+  { 
+  id: "m7-aa-7", 
+  title: "Akidah Akhlak Kelas VII", 
+  author: "Akhmad Fauzi, M.Pd.I", 
+  paket: "kelas-7", 
+  mapel: "aqidah-akhlak", 
+  link: "https://drive.google.com/file/d/1UgaG2DCWOQxR8abIrmo9RB0_fAuVgZsU/view?usp=sharing",
+  description: "Membentuk karakter islami melalui pemahaman akidah dan akhlak terpuji.", 
+  pages: 180, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#0d9488,#5eead4)", 
+  emoji: "🌙", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m7-ski-7", 
+  title: "SKI Kelas VII", 
+  author: "Muh. Chamdillah, M.Hum", 
+  paket: "kelas-7", 
+  mapel: "ski", 
+  link: "https://drive.google.com/file/d/1bQMmtFs_ZqtiHPC48nFeovi9oGyYR-4W/view?usp=sharing",
+  description: "Menelusuri sejarah perjuangan Nabi Muhammad SAW dan peradaban Islam.", 
+  pages: 165, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#7c2d12,#fb923c)", 
+  emoji: "📜", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m7-ba-7", 
+  title: "Bahasa Arab Kelas VII", 
+  author: "Faruq Baharudin, M.Pd", 
+  paket: "kelas-7", 
+  mapel: "bahasa-arab", 
+  link: "https://drive.google.com/file/d/1Dpn_6dTlK2okiIsJ5V3o90du-K6__q5y/view?usp=sharing",
+  description: "Pengenalan dasar komunikasi bahasa Arab untuk lingkungan madrasah.", 
+  pages: 190, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#1e3a8a,#60a5fa)", 
+  emoji: "🕌", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m7-qh-7", 
+  title: "Al-Qur'an Hadis Kelas VII", 
+  author: "Drs. Moh. Hafidz", 
+  paket: "kelas-7", 
+  mapel: "alquran-hadits", 
+  link: "https://drive.google.com/file/d/1GSa3c8BwFhj5XjcQMAd8AMC5GvYlv6Jj/view?usp=sharing",
+  description: "Dasar-dasar ilmu Al-Qur'an dan pemahaman hadis pilihan.", 
+  pages: 210, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#166534,#4ade80)", 
+  emoji: "📿", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+
 // ===== KELAS 8 (REVISI SESUAI DATA) =====
   { 
     id: "b011", 
@@ -304,6 +369,86 @@ const BOOKS_DATA = [
     edition: "Cetakan Ke-1",
     isbn: "978-623-388-721-2"
   },
+  { 
+  id: "m8-aa-8", 
+  title: "Akidah Akhlak Kelas VIII", 
+  author: "Yusuf Hasyim, S.Ag, M.Si", 
+  paket: "kelas-8", 
+  mapel: "aqidah-akhlak", 
+  link: "https://drive.google.com/file/d/1JXx3yBpV6Fidg4DgZMOPfvyoO6y3MKlt/view?usp=sharing",
+  description: "Pendalaman materi aqidah Islam dan pembiasaan akhlak mahmudah.", 
+  pages: 185, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#0d9488,#5eead4)", 
+  emoji: "🌙", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m8-fiq-8", 
+  title: "Fikih Kelas VIII", 
+  author: "H. Zainul Ma'arif, MA", 
+  paket: "kelas-8", 
+  mapel: "fiqih", 
+  link: "https://drive.google.com/file/d/10jQyxXkkaCsdnnVTZ5yM8cJezJHpiEES/view?usp=sharing",
+  description: "Mempelajari hukum-hukum ibadah dan muamalah dalam Islam.", 
+  pages: 200, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#4c1d95,#a78bfa)", 
+  emoji: "☪️", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m8-ski-8", 
+  title: "SKI Kelas VIII", 
+  author: "Muh. Subhan, M.Hum", 
+  paket: "kelas-8", 
+  mapel: "ski", 
+  link: "https://drive.google.com/file/d/1vE2b80dYIzI6isX2estX2hd8qb9bXtQG/view?usp=sharing",
+  description: "Sejarah kekhalifahan Islam dan perkembangan ilmu pengetahuan.", 
+  pages: 175, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#7c2d12,#fb923c)", 
+  emoji: "📜", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m8-ba-8", 
+  title: "Bahasa Arab Kelas VIII", 
+  author: "Masrukhin, S.Pd", 
+  paket: "kelas-8", 
+  mapel: "bahasa-arab", 
+  link: "https://drive.google.com/file/d/1l-bZxwTmvtZyw4LfxeJl8KMy5jBVkE47/view?usp=sharing",
+  description: "Peningkatan kemahiran membaca dan berbicara dalam bahasa Arab.", 
+  pages: 180, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#1e3a8a,#60a5fa)", 
+  emoji: "🕌", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m8-qh-8", 
+  title: "Al-Qur'an Hadis Kelas VIII", 
+  author: "Usup Sidik, S.Ag", 
+  paket: "kelas-8", 
+  mapel: "alquran-hadits", 
+  link: "https://drive.google.com/file/d/1Az2wAt2sZgLkFNbs35dI3ad1PQVNNSGf/view?usp=sharing",
+  description: "Memahami isi kandungan Al-Qur'an dan fungsi hadis dalam kehidupan.", 
+  pages: 195, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#166534,#4ade80)", 
+  emoji: "📿", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
 
 // ===== KELAS 9 (REVISI SESUAI DATA) =====
   { 
@@ -386,49 +531,281 @@ const BOOKS_DATA = [
     edition: "Cetakan Ke-1",
     isbn: "978-602-244-469-5"
   },
+  { 
+  id: "m9-aa-9", 
+  title: "Akidah Akhlak Kelas IX", 
+  author: "Hj. Muta'allimah, S.Ag, M.Si", 
+  paket: "kelas-9", 
+  mapel: "aqidah-akhlak", 
+  link: "https://drive.google.com/file/d/1OiOyGu5jsRBCw9zl7QYuvAHz74PRcgF9/view?usp=sharing",
+  description: "Mempelajari hari akhir dan etika bermasyarakat secara islami.", 
+  pages: 170, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#0d9488,#5eead4)", 
+  emoji: "🌙", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m9-fiq-9", 
+  title: "Fikih Kelas IX", 
+  author: "Ubaidillah, M.Pd", 
+  paket: "kelas-9", 
+  mapel: "fiqih", 
+  link: "https://drive.google.com/file/d/11_pydyvCgsPNBcxWnrqa27tXiYpRdBxT/view?usp=sharing",
+  description: "Pendalaman hukum penyembelihan, kurban, dan ilmu waris dasar.", 
+  pages: 220, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#4c1d95,#a78bfa)", 
+  emoji: "☪️", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m9-ski-9", 
+  title: "SKI Kelas IX", 
+  author: "M. Kholiluddin, M.Pd", 
+  paket: "kelas-9", 
+  mapel: "ski", 
+  link: "https://drive.google.com/file/d/1nMOTqoT7MbhpAJfqLNLQTiMRq9WGRhUa/view?usp=sharing",
+  description: "Mempelajari sejarah masuknya Islam di Nusantara dan tradisinya.", 
+  pages: 160, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#7c2d12,#fb923c)", 
+  emoji: "📜", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m9-ba-9", 
+  title: "Bahasa Arab Kelas IX", 
+  author: "Yushi Mukhlisotul, MM", 
+  paket: "kelas-9", 
+  mapel: "bahasa-arab", 
+  link: "https://drive.google.com/file/d/1qoILukC5-6QFQnsDzo1xmgqXO4vwr9WW/view?usp=sharing",
+  description: "Kemahiran bahasa Arab tingkat lanjut untuk siswa Madrasah Tsanawiyah.", 
+  pages: 185, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#1e3a8a,#60a5fa)", 
+  emoji: "🕌", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "m9-qh-9", 
+  title: "Al-Qur'an Hadis Kelas IX", 
+  author: "Niswatul Khoiriyah, S.Pd.I, M.Si", 
+  paket: "kelas-9", 
+  mapel: "alquran-hadits", 
+  link: "https://drive.google.com/file/d/1KA3IEnWR3sJl2-AEc97DIDpH4LcjyxG_/",
+  description: "Memperdalam pemahaman tajwid dan kandungan hadis tentang lingkungan.", 
+  pages: 205, 
+  year: 2019, 
+  gradient: "linear-gradient(135deg,#166534,#4ade80)", 
+  emoji: "📿", 
+  publisher: "Direktorat KSKK Madrasah", 
+  edition: "KMA 183",
+  isbn: "-"
+}
 ];
 
-const STORY_BOOKS_DATA = [
- { 
-    id: "s001", 
-    title: "Si Kancil dan Buaya", 
-    author: "Tim Nusantara", 
-    link: "https://literacycloud.org/stories/300-the-mouse-deer-and-the-crocodiles/", // Contoh link baca online
-    ageGroup: "5-8 tahun", 
-    description: "Kisah klasik si kancil yang cerdik berhasil menyeberangi sungai dengan tipu muslihatnya.", 
-    gradient: "linear-gradient(135deg,#4ade80,#6ee7b7)", 
-    emoji: "🦊", 
-    pages: 24 
-  },
-  { id: "s002", title: "Petualangan Budi ke Bulan", author: "Sari Dewi", ageGroup: "6-10 tahun", description: "Budi bermimpi pergi ke bulan dan bertemu dengan makhluk-makhluk luar angkasa yang lucu.", gradient: "linear-gradient(135deg,#60a5fa,#a5b4fc)", emoji: "🚀", pages: 64 },
-  { id: "s003", title: "Malin Kundang", author: "Legenda Minangkabau", ageGroup: "8-12 tahun", description: "Kisah anak durhaka yang dikutuk menjadi batu oleh ibunya yang ia telantarkan.", gradient: "linear-gradient(135deg,#fbbf24,#fdba74)", emoji: "🌊", pages: 56 },
-  { id: "s004", title: "Putri Salju Nusantara", author: "Rima Anggraini", ageGroup: "5-9 tahun", description: "Kisah putri cantik yang melarikan diri ke hutan dan tinggal bersama tujuh kurcaci.", gradient: "linear-gradient(135deg,#f472b6,#fda4af)", emoji: "👸", pages: 72 },
-  { id: "s005", title: "Garuda dan Naga Sakti", author: "Adi Prawoto", ageGroup: "8-13 tahun", description: "Pertarungan epik Garuda melawan Naga Sakti untuk membebaskan sang ibu.", gradient: "linear-gradient(135deg,#f87171,#fdba74)", emoji: "🦅", pages: 88 },
-  { id: "s006", title: "Kisah Negeri Donat", author: "Luna Pratiwi", ageGroup: "4-7 tahun", description: "Imajinasi luar biasa tentang negeri ajaib yang terbuat dari makanan lezat.", gradient: "linear-gradient(135deg,#facc15,#fcd34d)", emoji: "🍩", pages: 40 },
-  { id: "s007", title: "Sang Penjaga Hutan", author: "Bambang Nugroho", ageGroup: "7-12 tahun", description: "Seorang anak yang belajar mencintai alam dan menjaga kelestarian hutan.", gradient: "linear-gradient(135deg,#34d399,#86efac)", emoji: "🌳", pages: 80 },
-  { id: "s008", title: "Anak Rajin dan Lampu Ajaib", author: "Tim Pustaka Anak", ageGroup: "6-9 tahun", description: "Kisah anak rajin yang menemukan lampu ajaib dan belajar tentang tanggung jawab.", gradient: "linear-gradient(135deg,#a78bfa,#d8b4fe)", emoji: "🪔", pages: 52 },
-  { id: "s009", title: "Bima Si Kupu-kupu Biru", author: "Anisa Harahap", ageGroup: "4-6 tahun", description: "Petualangan kupu-kupu kecil berwarna biru yang mencari teman di taman bunga.", gradient: "linear-gradient(135deg,#38bdf8,#67e8f9)", emoji: "🦋", pages: 36 },
-  { id: "s010", title: "Legenda Danau Toba", author: "Cerita Rakyat Sumatera", ageGroup: "9-13 tahun", description: "Kisah asal-usul Danau Toba yang penuh dengan nilai-nilai budaya Batak.", gradient: "linear-gradient(135deg,#2dd4bf,#7dd3fc)", emoji: "🏞️", pages: 68 },
+const NON_TEXT_BOOKS_DATA = [
+  // --- KATEGORI KITAB & WIRID (GURU MUHAMMAD RIJANI) ---
   { 
-    id: "s011", 
-    title: "Asal Usul Sungai Barito", 
-    author: "Cerita Rakyat Kalimantan", 
-    link: "https://buku.kemdikbud.go.id/katalog/asal-usul-sungai-barito", // Link info buku kemdikbud
-    ageGroup: "6-10 tahun", 
-    description: "Legenda asal-usul Sungai Barito yang penuh nilai-nilai budaya Banjar yang kaya.", 
-    gradient: "linear-gradient(135deg,#94a3b8,#93c5fd)", 
-    emoji: "🌊", 
-    pages: 32 
+    id: "nt-ratib-1", 
+    title: "Ratib Atthos - Guru Muhammad Rijani", 
+    author: "Guru Muhammad Rijani", 
+    link: "https://drive.google.com/file/d/13zxZ6HCBJ4VzsT-gz8QBvZJjwxg_CLuH/view?usp=sharing",
+    description: "Kumpulan zikir dan doa harian yang disusun oleh Al-Habib Umar bin Abdurrahman Al-Aththas.", 
+    gradient: "linear-gradient(135deg,#065f46,#10b981)", 
+    emoji: "📿", 
+    pages: 32,
+    year: 2024
   },
   { 
-    id: "s012", 
-    title: "Demang Lehman Pahlawan Banjar", 
-    author: "Literasi Kalsel", 
-    link: "https://repositori.kemdikbud.go.id/11438/1/Demang%20Lehman.pdf", // Link PDF langsung
-    ageGroup: "9-13 tahun", 
-    description: "Kisah keberanian Demang Lehman, pahlawan dari Kalimantan Selatan yang membela tanah air.", 
-    gradient: "linear-gradient(135deg,#ef4444,#fb7185)", 
-    emoji: "⚔️", 
-    pages: 45 
+    id: "nt-ratib-2", 
+    title: "Ratib Haddad - Guru Muhammad Rijani", 
+    author: "Guru Muhammad Rijani", 
+    link: "https://drive.google.com/file/d/1D2O6jaIw20nWT6OReqXpueQVkGliHbX8/view?usp=sharing",
+    description: "Zikir Ratib Al-Haddad untuk perlindungan diri dan ketenangan hati.", 
+    gradient: "linear-gradient(135deg,#065f46,#10b981)", 
+    emoji: "🌙", 
+    pages: 40,
+    year: 2024
+  },
+  { 
+    id: "nt-wirid-1", 
+    title: "Wiridul Latif - Guru Muhammad Rijani", 
+    author: "Guru Muhammad Rijani", 
+    link: "https://drive.google.com/file/d/1QgMshXMJwXZQhWF8oh9gc8ry8_f5nDTa/view?usp=sharing",
+    description: "Wirid pagi dan sore yang disusun oleh Al-Imam Abdullah bin Alwi Al-Haddad.", 
+    gradient: "linear-gradient(135deg,#065f46,#10b981)", 
+    emoji: "✨", 
+    pages: 28,
+    year: 2024
+  },
+
+  // --- KATEGORI AKIDAH & FIQIH (TAUDHIHUL ADILLAH & LAINNYA) ---
+  { 
+    id: "nt-sifat-20", 
+    title: "Sifat Dua Puluh Awalluddin", 
+    author: "Awalluddin", 
+    link: "https://drive.google.com/file/d/15bZ4vUhdVnQ_6afn9-13JxNrv85VaXuh/view?usp=sharing",
+    description: "Mempelajari dasar-dasar mengenal Allah melalui sifat dua puluh.", 
+    gradient: "linear-gradient(135deg,#1e40af,#3b82f6)", 
+    emoji: "📖", 
+    pages: 120,
+    year: 2022
+  },
+  { 
+    id: "nt-taudhih-1", 
+    title: "Taudhîhul Adillah Buku 1 (Akidah)", 
+    author: "KH. M. Syafi'i Hadzami", 
+    link: "https://drive.google.com/file/d/18qhge4jUAQA-tWkLY4pM0DdMK_bpDDY4/view?usp=sharing",
+    description: "Penjelasan dalil-dalil agama khusus mengenai persoalan Akidah.", 
+    gradient: "linear-gradient(135deg,#334155,#64748b)", 
+    emoji: "📚", 
+    pages: 250,
+    year: 2020
+  },
+  { 
+    id: "nt-taudhih-2", 
+    title: "Taudhîhul Adillah Buku 2 (Ushul & Akhlak)", 
+    author: "KH. M. Syafi'i Hadzami", 
+    link: "https://drive.google.com/file/d/1WDD-RqMxNxCNSJMYhYh8C5xLNAW-vQpL/view?usp=sharing",
+    description: "Membahas tentang dasar-dasar hukum Islam dan pembentukan akhlak.", 
+    gradient: "linear-gradient(135deg,#334155,#64748b)", 
+    emoji: "📜", 
+    pages: 280,
+    year: 2020
+  },
+  { 
+    id: "nt-taudhih-3", 
+    title: "Taudhîhul Adillah Buku 3 (Thoharah)", 
+    author: "KH. M. Syafi'i Hadzami", 
+    link: "https://drive.google.com/file/d/1g32a5Fo2nxBStmaweOvyyohIW5OOaNK-/view?usp=sharing",
+    description: "Panduan lengkap mengenai tata cara bersuci (Thoharah).", 
+    gradient: "linear-gradient(135deg,#334155,#64748b)", 
+    emoji: "💧", 
+    pages: 230,
+    year: 2020
+  },
+  { 
+    id: "nt-taudhih-4", 
+    title: "Taudhîhul Adillah Buku 4 (Shalat)", 
+    author: "KH. M. Syafi'i Hadzami", 
+    link: "https://drive.google.com/file/d/1eFYPtKVJCzjWxY2Jee5_jvNzENoLOYgv/view?usp=sharing",
+    description: "Kajian mendalam mengenai dalil-dalil dalam ibadah shalat.", 
+    gradient: "linear-gradient(135deg,#334155,#64748b)", 
+    emoji: "🕌", 
+    pages: 350,
+    year: 2020
+  },
+  { 
+    id: "nt-taudhih-5", 
+    title: "Taudhîhul Adillah Buku 5 (Puasa-Zakat-Haji)", 
+    author: "KH. M. Syafi'i Hadzami", 
+    link: "https://drive.google.com/file/d/1PXTkbDK2TeH75PXRbLmXoWsDTKSKxAJ-/view?usp=sharing",
+    description: "Panduan dalil tentang Puasa, Zakat, Haji, dan pengurusan Jenazah.", 
+    gradient: "linear-gradient(135deg,#334155,#64748b)", 
+    emoji: "🕋", 
+    pages: 400,
+    year: 2020
+  },
+  { 
+    id: "nt-taudhih-6", 
+    title: "Taudhîhul Adillah Buku 6 (Muamalah-Nikah)", 
+    author: "KH. M. Syafi'i Hadzami", 
+    link: "https://drive.google.com/file/d/1ZkGd7dRIq2bTg9BZLYJaD_9zoiJdLP07/view?usp=sharing",
+    description: "Penjelasan hukum Islam tentang transaksi dan pernikahan.", 
+    gradient: "linear-gradient(135deg,#334155,#64748b)", 
+    emoji: "🤝", 
+    pages: 380,
+    year: 2020
+  },
+
+  // --- KATEGORI PENGETAHUAN & ENSIKLOPEDIA ---
+  { 
+    id: "nt-kematian", 
+    title: "Ensiklopedi Kematian & Hari Akhir", 
+    author: "Imam Al-Ghazali (Kompilasi)", 
+    link: "https://drive.google.com/file/d/16_W9QlsY7jp--iHi-HGO5yUeZE0pbanl/view?usp=sharing",
+    description: "Membahas persiapan menghadapi kematian dan gambaran hari akhir.", 
+    gradient: "linear-gradient(135deg,#451a03,#92400e)", 
+    emoji: "⏳", 
+    pages: 310,
+    year: 2021
+  },
+  { 
+    id: "nt-pahlawan", 
+    title: "Ensiklopedi Pahlawan Nasional", 
+    author: "Pustaka Sejarah", 
+    link: "https://drive.google.com/file/d/18qAAUjBSV1wpyRf4AghWk4i32Vo5lBNw/view?usp=sharing",
+    description: "Mengenal profil dan perjuangan pahlawan-pahlawan bangsa Indonesia.", 
+    gradient: "linear-gradient(135deg,#991b1b,#ef4444)", 
+    emoji: "🇮🇩", 
+    pages: 200,
+    year: 2019
+  },
+  { 
+    id: "nt-nabi-25", 
+    title: "Kisah 25 Nabi dan Rasul", 
+    author: "Tim Literasi Islam", 
+    link: "https://drive.google.com/file/d/1we2XwyFrsn8zM_qgZB1auKwX3YSjkmkR/view?usp=sharing",
+    description: "Keteladanan hidup para nabi dan rasul Allah dalam berdakwah.", 
+    gradient: "linear-gradient(135deg,#fbbf24,#f59e0b)", 
+    emoji: "🐫", 
+    pages: 180,
+    year: 2022
+  },
+  { 
+    id: "nt-abunawas", 
+    title: "1001 Malam Abu Nawas", 
+    author: "Kisah Klasik", 
+    link: "https://drive.google.com/file/d/1DMwuaCRerm8Q7y75P3Iigr6xmhuragWP/view?usp=sharing",
+    description: "Kumpulan kisah lucu dan cerdik Abu Nawas yang penuh hikmah.", 
+    gradient: "linear-gradient(135deg,#7e22ce,#a855f7)", 
+    emoji: "🧞‍♂️", 
+    pages: 150,
+    year: 2020
+  },
+
+  // --- KATEGORI CERITA & DAERAH ---
+  { 
+    id: "nt-banda", 
+    title: "Banda Penghuni Taman", 
+    author: "Literasi Nusantara", 
+    link: "https://drive.google.com/file/d/10OQvUe-2wG3YQLpJVAlTb8dCafBruu0I/view?usp=sharing",
+    description: "Kisah fiksi pengayaan yang mengajarkan tentang menjaga lingkungan.", 
+    gradient: "linear-gradient(135deg,#15803d,#22c55e)", 
+    emoji: "🌻", 
+    pages: 80,
+    year: 2021
+  },
+  { 
+    id: "nt-nibung", 
+    title: "Putri Nibung di Sarang Lamun", 
+    author: "Cerita Rakyat", 
+    link: "https://drive.google.com/file/d/18hVfBrr555If_SJvNuQ83FyvS1a3nHCR/view?usp=sharing",
+    description: "Cerita rakyat tradisional yang kaya akan pesan moral dan budaya.", 
+    gradient: "linear-gradient(135deg,#db2777,#f472b6)", 
+    emoji: "👸", 
+    pages: 65,
+    year: 2019
+  },
+  { 
+    id: "nt-kerongo", 
+    title: "Si Kerongo", 
+    author: "Dongeng Nusantara", 
+    link: "https://drive.google.com/file/d/1uWIAPOiUCbBZNdPxckYsBhA5gFmKIoOf/view?usp=sharing",
+    description: "Kisah unik Si Kerongo dalam petualangan yang mendidik.", 
+    gradient: "linear-gradient(135deg,#0891b2,#22d3ee)", 
+    emoji: "🐢", 
+    pages: 50,
+    year: 2021
   }
 ];
