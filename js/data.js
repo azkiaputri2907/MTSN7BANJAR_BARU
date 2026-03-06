@@ -206,7 +206,22 @@ const BOOKS_DATA = [
     edition: "Edisi Pertama",
     isbn: "978-634-00-2043-4"
   },
-
+  { 
+    id: "b008", 
+    title: "English for Nusantara VII", 
+    author: "Ika Lestari Damayanti, dkk", 
+    paket: "kelas-7", 
+    mapel: "bahasa-inggris", 
+    link: "https://drive.google.com/file/d/14SRYenCZOv3RoL7U75IhOsmCbwIvcxJg/view?usp=sharing",
+    description: "Buku teks utama Bahasa Inggris untuk siswa SMP/MTs kelas 7 dengan pendekatan kurikulum merdeka.", 
+    pages: 250, // Estimasi halaman
+    year: 2022, 
+    gradient: "linear-gradient(135deg,#3b82f6,#60a5fa)", 
+    emoji: "🌐", 
+    publisher: "Pusat Perbukuan", 
+    edition: "Edisi Pertama",
+    isbn: "978-602-244-884-6"
+  },
   { 
   id: "m7-aa-7", 
   title: "Akidah Akhlak Kelas VII", 
@@ -370,6 +385,22 @@ const BOOKS_DATA = [
     isbn: "978-623-388-721-2"
   },
   { 
+    id: "b017", 
+    title: "English for Nusantara VIII", 
+    author: "Ika Lestari Damayanti, dkk", 
+    paket: "kelas-8", 
+    mapel: "bahasa-inggris", 
+    link: "https://drive.google.com/file/d/1t1Ip_QlQ1MwvMQcuRtK2RIQU5X2-JQo-/view?usp=sharing",
+    description: "Melanjutkan penguasaan bahasa Inggris melalui tema-tema menarik untuk siswa kelas 8.", 
+    pages: 260, // Estimasi halaman
+    year: 2022, 
+    gradient: "linear-gradient(135deg,#0ea5e9,#38bdf8)", 
+    emoji: "🌐", 
+    publisher: "Pusat Perbukuan", 
+    edition: "Edisi Pertama",
+    isbn: "978-602-427-941-7"
+  },
+  { 
   id: "m8-aa-8", 
   title: "Akidah Akhlak Kelas VIII", 
   author: "Yusuf Hasyim, S.Ag, M.Si", 
@@ -530,6 +561,22 @@ const BOOKS_DATA = [
     publisher: "Pusat Perbukuan", 
     edition: "Cetakan Ke-1",
     isbn: "978-602-244-469-5"
+  },
+  { 
+    id: "b026", 
+    title: "English for Nusantara IX", 
+    author: "Ika Lestari Damayanti, dkk", 
+    paket: "kelas-9", 
+    mapel: "bahasa-inggris", 
+    link: "https://drive.google.com/file/d/1VCPJWoNMqFrMFl0hrFT1F-NZY1CzbwmN/view?usp=sharing",
+    description: "Pendalaman materi bahasa Inggris untuk mempersiapkan siswa kelas 9 menuju jenjang berikutnya.", 
+    pages: 270, // Estimasi halaman
+    year: 2022, 
+    gradient: "linear-gradient(135deg,#0284c7,#0ea5e9)", 
+    emoji: "🌐", 
+    publisher: "Pusat Perbukuan", 
+    edition: "Edisi Pertama",
+    isbn: "978-602-427-942-4"
   },
   { 
   id: "m9-aa-9", 
