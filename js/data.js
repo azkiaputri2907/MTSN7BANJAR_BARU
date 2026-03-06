@@ -854,5 +854,101 @@ const NON_TEXT_BOOKS_DATA = [
     emoji: "🐢", 
     pages: 50,
     year: 2021
+  },
+  { 
+    id: "st-worms-fishing", 
+    title: "Worms for Fishing", 
+    author: "Zian Alfiana", 
+    link: "https://drive.google.com/file/d/1f0sFATvsu3caZ_1EujIrmnutGR_ysK7c/view?usp=sharing",
+    description: "Kisah petualangan mencari cacing untuk memancing. Ilustrasi oleh Naila Nabilatul Husna.", 
+    gradient: "linear-gradient(135deg,#fbbf24,#f59e0b)", 
+    emoji: "🪱", 
+    pages: 20,
+    year: 2025,
+    ageGroup: "5-9 tahun"
+  },
+  { 
+    id: "st-red-hen", 
+    title: "The Little Red Hen", 
+    author: "Starfall Education", 
+    link: "https://drive.google.com/file/d/16T7oLpl6Px6i6lKqHPuAMJpXCAaHrxE5/view?usp=sharing",
+    description: "Kumpulan cerita rakyat klasik termasuk kisah Ayam Betina Merah yang rajin.", 
+    gradient: "linear-gradient(135deg,#ef4444,#dc2626)", 
+    emoji: "🐔", 
+    pages: 48,
+    year: 2020,
+    ageGroup: "4-7 tahun"
+  },
+  { 
+    id: "st-lantern-girl", 
+    title: "The Lantern Girl", 
+    author: "Rasya Swarnasta", 
+    link: "https://drive.google.com/file/d/10AKeuP8rzg2O5gcOeVIUC4y2rdzLeDvW/view?usp=sharing",
+    description: "Cerita menyentuh tentang seorang gadis pembawa lentera. Ilustrasi oleh Kautsar Riina Arifin.", 
+    gradient: "linear-gradient(135deg,#6366f1,#4f46e5)", 
+    emoji: "🏮", 
+    pages: 24,
+    year: 2022,
+    ageGroup: "6-10 tahun"
+  },
+  { 
+    id: "st-mom-findout", 
+    title: "Don’t Let Mom Find Out!", 
+    author: "Yuniar Khairani", 
+    link: "https://drive.google.com/file/d/1yR3nIDL50KtLksW6O9R453spg5t-pbWm/view?usp=sharing",
+    description: "Kisah penuh rahasia dan kelucuan agar ibu tidak mengetahui sesuatu hal.", 
+    gradient: "linear-gradient(135deg,#ec4899,#db2777)", 
+    emoji: "🤫", 
+    pages: 18,
+    year: 2025,
+    ageGroup: "5-9 tahun"
+  },
+  { 
+    id: "st-finding-kuroki", 
+    title: "Finding Kuroki", 
+    author: "Heni Prasetyorini", 
+    link: "https://drive.google.com/file/d/1mrWRXhW0uxit7NmFG-KYde_taW6Z3_--/view?usp=sharing",
+    description: "Petualangan mencari Kuroki. Cerita yang melatih ketelitian dan kasih sayang.", 
+    gradient: "linear-gradient(135deg,#10b981,#059669)", 
+    emoji: "🔎", 
+    pages: 22,
+    year: 2025,
+    ageGroup: "6-9 tahun"
+  },
+  { 
+    id: "st-strong-mom", 
+    title: "Strong Like Mom", 
+    author: "Witaru Emi", 
+    link: "https://drive.google.com/file/d/1CFkI1g_id1BZIdKCpfoLrWuxLPsB-RvY/view?usp=sharing",
+    description: "Cerita inspiratif tentang anak yang ingin menjadi kuat seperti ibunya.", 
+    gradient: "linear-gradient(135deg,#f43f5e,#e11d48)", 
+    emoji: "💪", 
+    pages: 20,
+    year: 2022,
+    ageGroup: "5-8 tahun"
+  },
+  { 
+    id: "st-magic-hands", 
+    title: "Magic Hands", 
+    author: "Agem Jaya Dini", 
+    link: "https://drive.google.com/file/d/1YqDDz_sLxwDKHnbe_4J-Ox7PTwa2vt70/view?usp=sharing",
+    description: "Kekuatan tangan ajaib yang bisa menciptakan banyak hal luar biasa.", 
+    gradient: "linear-gradient(135deg,#8b5cf6,#7c3aed)", 
+    emoji: "✨", 
+    pages: 18,
+    year: 2025,
+    ageGroup: "4-7 tahun"
+  },
+  { 
+    id: "st-ask-durian", 
+    title: "Please Ask for Durian", 
+    author: "Pristian Wulanita", 
+    link: "https://drive.google.com/file/d/1FnIrmE2HHFeCzlqlx5HIukatHnyPpDYk/view?usp=sharing",
+    description: "Cerita unik seputar buah durian yang khas. Ilustrasi menarik oleh Livia Lim.", 
+    gradient: "linear-gradient(135deg,#84cc16,#65a30d)", 
+    emoji: "🍈", 
+    pages: 16,
+    year: 2025,
+    ageGroup: "6-10 tahun"
   }
 ];
