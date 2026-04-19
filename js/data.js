@@ -286,6 +286,38 @@ const BOOKS_DATA = [
   edition: "KMA 183",
   isbn: "-"
 },
+{ 
+  id: "f7-thaharah", 
+  title: "Fiqih Thaharah", 
+  author: "Ahmad Sarwat, Lc", 
+  paket: "kelas-7", 
+  mapel: "fiqih", 
+  link: "https://drive.google.com/file/d/1M665xdFXm44UTCTFubz0DuB0SGdl6cOQ/view?usp=sharing",
+  description: "Membahas hukum bersuci, jenis-jenis air, najis, dan tata cara wudhu sesuai syariat.", 
+  pages: 50, 
+  year: 2010, 
+  gradient: "linear-gradient(135deg,#059669,#34d399)", 
+  emoji: "💧", 
+  publisher: "DU CENTER PRESS", 
+  edition: "Cetakan Pertama",
+  isbn: "-"
+},
+{ 
+  id: "f7-shalat", 
+  title: "Fiqih Shalat", 
+  author: "Ahmad Sarwat, Lc", 
+  paket: "kelas-7", 
+  mapel: "fiqih", 
+  link: "https://drive.google.com/file/d/1gnOj8aJgbENvRLLSFzt-IeLGTlvmSpGj/view?usp=sharing",
+  description: "Panduan lengkap shalat fardhu, waktu shalat, syarat sah, rukun, hingga shalat berjamaah.", 
+  pages: 115, 
+  year: 2010, 
+  gradient: "linear-gradient(135deg,#10b981,#6ee7b7)", 
+  emoji: "🕌", 
+  publisher: "DU CENTER PRESS", 
+  edition: "Cetakan Pertama",
+  isbn: "-"
+},
 
 // ===== KELAS 8 (REVISI SESUAI DATA) =====
   { 
@@ -478,6 +510,38 @@ const BOOKS_DATA = [
   emoji: "📿", 
   publisher: "Direktorat KSKK Madrasah", 
   edition: "KMA 183",
+  isbn: "-"
+},
+{ 
+  id: "f8-infaq", 
+  title: "Fiqih Infaq", 
+  author: "Tim Redaksi", 
+  paket: "kelas-8", 
+  mapel: "fiqih", 
+  link: "https://drive.google.com/file/d/1ASO51kJe3QLcHkDKvZWbymiWB_EvIDlf/view?usp=sharing",
+  description: "Mempelajari hakikat infaq, dalil-dalil landasan, serta perbedaan infaq dengan zakat.", 
+  pages: 15, 
+  year: 2022, 
+  gradient: "linear-gradient(135deg,#047857,#10b981)", 
+  emoji: "🪙", 
+  publisher: "Penerbit Internal", 
+  edition: "Edisi Digital",
+  isbn: "-"
+},
+{ 
+  id: "f8-haji", 
+  title: "Fiqih Haji", 
+  author: "Tim Manasik", 
+  paket: "kelas-8", 
+  mapel: "fiqih", 
+  link: "https://drive.google.com/file/d/1-2scbNyGH8HAfB-Yux9jA4hpiBgj58l6/view?usp=sharing",
+  description: "Panduan manasik haji, rukun dan wajib haji, serta alur perjalanan haji Tamattu'.", 
+  pages: 25, 
+  year: 2023, 
+  gradient: "linear-gradient(135deg,#064e3b,#059669)", 
+  emoji: "🕋", 
+  publisher: "Penerbit Mandiri", 
+  edition: "Cetakan Terbaru",
   isbn: "-"
 },
 
@@ -950,5 +1014,71 @@ const NON_TEXT_BOOKS_DATA = [
     pages: 16,
     year: 2025,
     ageGroup: "6-10 tahun"
+  },
+  // --- KATEGORI SEJARAH & SIRAH ---
+  { 
+    id: "nt-sejarah-peradaban-1", 
+    title: "Sejarah Peradaban Islam (Prakenabian - Indonesia)", 
+    author: "Dr. Din Muhammad Zakariya, M.Pd.I", 
+    link: "https://drive.google.com/file/d/1pW6tHJk56r8aRxsRJ26kTp7LAP_bNsc4/view?usp=sharing",
+    description: "Membahas perjalanan Islam mulai dari masa pra-kenabian hingga masuknya Islam ke Indonesia.", 
+    gradient: "linear-gradient(135deg,#1e293b,#334155)", 
+    emoji: "📜", 
+    pages: 250, // Estimasi ketebalan buku teks
+    year: 2018,
+    publisher: "CV. Intrans Publishing – Malang",
+    isbn: "978-602-08996-4-0"
+  },
+  { 
+    id: "nt-sejarah-nusantara", 
+    title: "Sejarah Islam di Nusantara", 
+    author: "Michael Laffan", 
+    link: "https://drive.google.com/file/d/1meKaEykLdZsTwUIzsRtWdJmWuL7OWiFT/view?usp=sharing",
+    description: "Terjemahan dari 'The Makings of Indonesian Islam'. Analisis mendalam sejarah Islam di wilayah kepulauan.", 
+    gradient: "linear-gradient(135deg,#7c2d12,#9a3412)", 
+    emoji: "🗺️", 
+    pages: 350,
+    year: 2015,
+    publisher: "Penerbit Bentang (PT Bentang Pustaka)",
+    isbn: "-"
+  },
+  { 
+    id: "nt-peradaban-islam-riau", 
+    title: "Sejarah Peradaban Islam", 
+    author: "Dr. H. Syamruddin Nasution, M.Ag.", 
+    link: "https://drive.google.com/file/d/1Zy4_Ze8uGGLcio5v1UVktNWG2wGOSbHX/view?usp=sharing",
+    description: "Karya referensi mengenai sejarah peradaban Islam yang diterbitkan oleh Yayasan Pusaka Riau.", 
+    gradient: "linear-gradient(135deg,#0f172a,#1e293b)", 
+    emoji: "🏛️", 
+    pages: 320,
+    year: 2013,
+    publisher: "Yayasan Pusaka Riau",
+    isbn: "979-9339-27-4"
+  },
+  { 
+    id: "nt-sirah-nabawiyah", 
+    title: "Sirah Nabawiyah", 
+    author: "Tim Penulis", 
+    link: "https://drive.google.com/file/d/1Usq4si8T1Rc2I392odW9AX3pRMAa5thP/view?usp=sharing",
+    description: "Sejarah lengkap perjalanan hidup dan perjuangan Rasulullah SAW.", 
+    gradient: "linear-gradient(135deg,#064e3b,#065f46)", 
+    emoji: "✨", 
+    pages: 450,
+    year: 2020,
+    publisher: "Penerbit Umum",
+    isbn: "-"
+  },
+  { 
+    id: "nt-bidayah-wan-nihayah", 
+    title: "Al-Bidayah Wan Nihayah (Khulafa'ur Rasyidin)", 
+    author: "Ibnu Katsir", 
+    link: "https://drive.google.com/file/d/1Syu6uArHqrE_U1BWMcn5SZHKp5BUYoYg/view?usp=sharing",
+    description: "Kisah sejarah masa kepemimpinan Khulafa'ur Rasyidin dari kitab mahakarya Ibnu Katsir.", 
+    gradient: "linear-gradient(135deg,#422006,#713f12)", 
+    emoji: "🕋", 
+    pages: 600,
+    year: 2002,
+    publisher: "DARUL HAQ, Jakarta",
+    isbn: "-"
   }
 ];
