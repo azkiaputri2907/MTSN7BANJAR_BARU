@@ -721,7 +721,23 @@ const BOOKS_DATA = [
   publisher: "Direktorat KSKK Madrasah", 
   edition: "KMA 183",
   isbn: "-"
-}
+},
+{ 
+    id: "f9-ijarah", 
+    title: "Fiqih Ijarah", 
+    author: "Tim Redaksi", 
+    paket: "kelas-9", 
+    mapel: "fiqih", 
+    link: "https://drive.google.com/file/d/1odXCWGdoB1K2RGMBZaKkbBQhzFOO0J2o/view?usp=sharing",
+    description: "Membahas akad sewa-menyewa dan upah-mengupah, rukun ijarah, serta hak dan kewajiban dalam akad.", 
+    pages: 15, // Estimasi berdasarkan daftar isi
+    year: 2024, 
+    gradient: "linear-gradient(135deg,#0d9488,#5eead4)", 
+    emoji: "🤝", 
+    publisher: "Penerbit Internal", 
+    edition: "Edisi Digital",
+    isbn: "-"
+  }
 ];
 
 const NON_TEXT_BOOKS_DATA = [
