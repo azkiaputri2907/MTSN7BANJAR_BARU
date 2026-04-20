@@ -513,6 +513,22 @@ const BOOKS_DATA = [
   isbn: "-"
 },
 { 
+  id: "b-ski-8", 
+  title: "Sejarah Kebudayaan Islam Kelas VIII", 
+  author: "H. Syafaruddin Lubis", 
+  paket: "kelas-8", 
+  mapel: "ski", 
+  link: "https://drive.google.com/file/d/1wlQXe3m8VbZXy9teKZkF6b8LH295dh7S/view?usp=sharing",
+  description: "Buku teks resmi Kemenag RI untuk pembelajaran SKI kelas VIII MTs berdasarkan KMA Nomor 183 Tahun 2019.", 
+  pages: 175, 
+  year: 2020, 
+  gradient: "linear-gradient(135deg,#475569,#1e293b)", 
+  emoji: "📜", 
+  publisher: "Direktorat KSKK Madrasah Kemenag RI", 
+  edition: "Cetakan ke-1",
+  isbn: "978-623-6687-37-6"
+},
+{ 
   id: "m8-ba-8", 
   title: "Bahasa Arab Kelas VIII", 
   author: "Masrukhin, S.Pd", 
@@ -576,6 +592,7 @@ const BOOKS_DATA = [
   edition: "Cetakan Terbaru",
   isbn: "-"
 },
+
 
 // ===== KELAS 9 (REVISI SESUAI DATA) =====
   { 
