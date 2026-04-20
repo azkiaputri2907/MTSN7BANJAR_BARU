@@ -318,6 +318,38 @@ const BOOKS_DATA = [
   edition: "Cetakan Pertama",
   isbn: "-"
 },
+{ 
+  id: "b-ski-7", 
+  title: "Sejarah Kebudayaan Islam Kelas VII", 
+  author: "Muh. Chamdillah", 
+  paket: "kelas-7", 
+  mapel: "ski", 
+  link: "https://drive.google.com/file/d/1_sd4ah-MOp7m1X2d2dYCJLva-Tg1mqQv/view?usp=sharing",
+  description: "Buku teks resmi Kemenag sesuai KMA 183 untuk mempelajari sejarah peradaban Islam di kelas 7.", 
+  pages: 180, // Estimasi rata-rata buku paket
+  year: 2020, 
+  gradient: "linear-gradient(135deg,#94a3b8,#475569)", 
+  emoji: "📜", 
+  publisher: "Direktorat KSKK Madrasah Kemenag RI", 
+  edition: "Cetakan ke-1",
+  isbn: "978-623-6687-36-9"
+},
+{ 
+  id: "b-fiqih-7-kemenag", 
+  title: "Fiqih MTs Kelas VII", 
+  author: "Mashuri", 
+  paket: "kelas-7", 
+  mapel: "fiqih", 
+  link: "https://drive.google.com/file/d/1lUEBeZanYyUW3t1ttDZsX92uw5rwSJHv/view?usp=sharing",
+  description: "Buku siswa Fiqih wajib untuk kelas 7 MTs mengacu pada KMA Nomor 183 Tahun 2019.", 
+  pages: 190, 
+  year: 2020, 
+  gradient: "linear-gradient(135deg,#059669,#10b981)", 
+  emoji: "☪️", 
+  publisher: "Direktorat KSKK Madrasah Kemenag RI", 
+  edition: "Cetakan ke-1",
+  isbn: "978-623-6687-32-1"
+},
 
 // ===== KELAS 8 (REVISI SESUAI DATA) =====
   { 
@@ -737,7 +769,23 @@ const BOOKS_DATA = [
     publisher: "Penerbit Internal", 
     edition: "Edisi Digital",
     isbn: "-"
-  }
+  }, 
+  { 
+  id: "b-ski-9", 
+  title: "Sejarah Kebudayaan Islam Kelas IX", 
+  author: "M. Kholiluddin", 
+  paket: "kelas-9", 
+  mapel: "ski", 
+  link: "https://drive.google.com/file/d/16MOBlkqFQx032SVQ1r9qIQsj-uiqnGZP/view?usp=sharing",
+  description: "Membahas sejarah perkembangan Islam untuk tingkat akhir sesuai Kurikulum PAI Madrasah.", 
+  pages: 160, 
+  year: 2020, 
+  gradient: "linear-gradient(135deg,#64748b,#334155)", 
+  emoji: "📜", 
+  publisher: "Direktorat KSKK Madrasah Kemenag RI", 
+  edition: "Cetakan ke-1",
+  isbn: "978-623-6687-38-3"
+},
 ];
 
 const NON_TEXT_BOOKS_DATA = [
