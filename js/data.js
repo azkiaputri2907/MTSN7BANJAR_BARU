@@ -1161,5 +1161,18 @@ const NON_TEXT_BOOKS_DATA = [
     year: 2002,
     publisher: "DARUL HAQ, Jakarta",
     isbn: "-"
+  },
+  { 
+    id: "nt-tikus-sakit-gigi", 
+    title: "Kalau Tikus Sakit Gigi", 
+    author: "Barbara Eni", 
+    link: "https://drive.google.com/file/d/1VjJIeKw1wrKvgjUcLXZoMDqBaQeaJMmN/view?usp=sharing",
+    description: "Cerita fabel anak yang mengisahkan tentang tikus yang mengalami sakit gigi, diterbitkan oleh Badan Bahasa.", 
+    gradient: "linear-gradient(135deg,#fcd34d,#fbbf24)", 
+    emoji: "🐭", 
+    pages: 24,
+    year: 2021,
+    publisher: "Badan Pengembangan dan Pembinaan Bahasa",
+    isbn: "978-623-307-138-3"
   }
 ];
